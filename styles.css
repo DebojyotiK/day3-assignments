@@ -230,23 +230,37 @@ body{
 }
 
 .filters-nav-bar{
-    position: -webkit-sticky;
-    position: sticky;
-    top: 200px;
+    position: relative;
     height: 100px;
 }
 
 .filter-nav-bar-right-menu{
     position: absolute;
-    right: 0;
-    top: 0;
-    background-color: red;
-    width: 100px;
-    height: 100px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    display: flex;
+    align-items: stretch;
 }
 
-.filters-scrollview{
-    overflow-x: scroll;
+.gradient{
+    height: 100%;
+    width: 200px;
+}
+
+.arrow-and-filter-container{
+    background-color: white;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding-right: 64px;
+}
+
+.arrow-container{
+    padding: 12px;
+    border-radius: 40px;
+    background-color: white;
+    border: 1px solid #e8e8e8;
 }
 
 .filters{
@@ -375,7 +389,7 @@ body{
 }
 
 .list-content-padding{
-    padding: 0px 12px;
+    padding: 12px 12px;
 }
 
 .image-container{
@@ -484,7 +498,7 @@ body{
     aspect-ratio: 1;
     border-radius: 8px;
     background-color: white;
-    opacity: 0.8;
+    opacity: 0.95;
 }
 
 .dot3{
@@ -492,21 +506,37 @@ body{
     aspect-ratio: 1;
     border-radius: 8px;
     background-color: white;
-    opacity: 0.6;
+    opacity: 0.90;
 }
 
 .dot4{
-    width:6.4px;
-    aspect-ratio: 1;
-    border-radius: 8px;
-    background-color: white;
-    opacity: 0.5;
-}
-
-.dot5{
     width:6px;
     aspect-ratio: 1;
     border-radius: 8px;
     background-color: white;
-    opacity: 0.4;
+    opacity: 0.85;
+}
+
+.dot5{
+    width:5.5px;
+    aspect-ratio: 1;
+    border-radius: 8px;
+    background-color: white;
+    opacity: 0.8;
+}
+
+.filter-card{
+    border: 1px solid #e8e8e8;
+    border-radius: 12px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    color: #222222;
+    gap: 12px;
+}
+
+.filter-text{
+    font-weight: 500;
+    font-size: 15px;
+    margin: 0px;
 }
