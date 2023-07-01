@@ -268,12 +268,23 @@ body{
     gap: 40px;
     padding: 0px 64px;
     padding-top: 20px;
+    overflow-x: scroll;
+}
+
+.filters::-webkit-scrollbar {
+    display: none; /*chrome*/
+}
+
+.filters {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
 
 .item-active{
     display: flex;
     flex-direction: column;
     align-items: stretch;
+    flex: none;
 }
 
 .item-logo-active{
@@ -299,6 +310,7 @@ body{
     flex-direction: column;
     align-items: stretch;
     opacity: 0.6;
+    flex: none;
 }
 
 .item-logo-inactive{
@@ -323,6 +335,7 @@ body{
 .item-inactive:hover{
     opacity: 1;
 }
+
 .item-inactive:hover > .bottom-dash-inactive{
     display: initial;
 }
@@ -542,6 +555,7 @@ body{
 }
 
 .filters-nav-bar-container{
+    position: -webkit-sticky;
     position: sticky;
     top: 89px;
     background-color: white;
