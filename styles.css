@@ -207,5 +207,89 @@ body{
     color: white;
 }
 
+.filters-nav-bar-top-padding{
+    height: 20px;
+    background-color: white;
+}
 
+.filters-nav-bar{
+    position: sticky;
+    height: 100px;
+}
 
+.filter-nav-bar-right-menu{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+}
+
+.filters-scrollview{
+    overflow-x: scroll;
+}
+
+.filters{
+    display: flex;
+    gap: 40px;
+    padding: 0px 64px;
+    padding-top: 20px;
+}
+
+.item-active{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.item-logo-active{
+    width: 24px;
+    margin: 0px;
+    align-self: center;
+}
+
+.item-text-active{
+    font-weight: 500;
+    font-size: 12px;
+    text-align: center;  
+}
+
+.bottom-dash-active{
+    height: 2px;
+    background-color: #222222;
+    border-radius: 2px;
+}
+
+.item-inactive{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    opacity: 0.6;
+}
+
+.item-logo-inactive{
+    width: 24px;
+    margin: 0px;
+    align-self: center;
+}
+
+.item-text-inactive{
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+}
+
+.bottom-dash-inactive{
+    height: 2px;
+    background-color: #ebebeb;
+    border-radius: 2px;
+    display: none;
+}
+
+.item-inactive:hover{
+    opacity: 1;
+}
+.item-inactive:hover > .bottom-dash-inactive{
+    display: initial;
+}
