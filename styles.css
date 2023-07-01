@@ -1,0 +1,176 @@
+body{
+    font-family: 'Circular',sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+.airbnb-logo{
+    color: #ff385c;
+}
+
+.nav-bar{
+    position: static;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 64px;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.control-card{
+    border: 1px solid #e8e8e8;
+    border-radius: 30px;
+    -webkit-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.11);
+    -moz-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.11);
+    box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.11);
+    padding: 8px 24px;
+    padding-right: 8px;
+    display: flex;
+    align-items: center;
+    color: #222222;
+}
+
+.location-button{
+    font-weight: 500;
+    font-size: 14px;
+    margin: 0px;
+}
+
+.time-button{
+    font-weight: 500;
+    font-size: 14px;
+    margin: 0px;
+}
+
+.guest-count-button{
+    font-weight: 300;
+    font-size: 14px;
+    margin: 0px;
+}
+
+.search-container{
+    background-color: #ff385c;
+    height: 32px;
+    width: 32px;
+    display: block;
+    border-radius: 32px;
+    position: relative;
+    margin-left: 12px;
+}
+
+.search{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+
+.horizontal-seperator{
+    width: 1px;
+    height: 24px;
+    background-color: #dcdddd;
+    margin: 0px 12px;
+}
+
+.profile-section{
+    display: flex;
+    align-items: center;
+    color: #222222;
+}
+
+.airbnb-your-homes{
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0px;
+    padding: 14px;
+    border-radius: 40px;
+}
+
+.airbnb-your-homes:hover{
+    background-color: #f7f7f7;
+}
+
+.settings{
+    width: 48px;
+    height: 48px;
+    border-radius: 40px;
+    display: block;
+    position: relative;
+    margin-right: 8px;
+}
+
+.settings svg{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.settings:hover{
+    background-color: #f7f7f7;
+}
+
+.more-card{
+    border: 1px solid #e8e8e8;
+    border-radius: 30px;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    color: #222222;
+    gap: 12px;
+}
+
+.more-card:hover{
+    -webkit-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.11);
+    -moz-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.11);
+    box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.11);
+}
+
+.bottom-nav-bar{
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 64px;
+    border-top: 1px solid #ebebeb;
+}
+
+.bottom-nav-bar-left{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+}
+
+.bottom-nav-bar-light-text{
+    color: #222222;
+    font-weight: 300;
+    font-size: 14px;
+    margin: 0px;
+}
+
+.bottom-links{
+    text-decoration: none;
+}
+
+.bottom-links:hover{
+    text-decoration: underline;
+}
+
+.bottom-nav-bar-right{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+}
+
+.bottom-nav-bar-medium-text{
+    color: #222222;
+    font-weight: 500;
+    font-size: 14px;
+    margin: 0px;
+}
