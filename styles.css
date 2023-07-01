@@ -540,3 +540,10 @@ body{
     font-size: 15px;
     margin: 0px;
 }
+
+.filters-nav-bar-container{
+    position: sticky;
+    top: 89px;
+    background-color: white;
+    z-index: 999;
+}
