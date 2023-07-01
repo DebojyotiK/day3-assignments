@@ -35,9 +35,9 @@ body{
 .control-card{
     border: 1px solid #e8e8e8;
     border-radius: 30px;
-    -webkit-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.11);
-    -moz-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.11);
-    box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.11);
+    -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.11);
+    -moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.11);
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.11);
     padding: 8px 24px;
     padding-right: 8px;
     display: flex;
@@ -231,7 +231,6 @@ body{
 
 .filters-nav-bar{
     position: relative;
-    height: 100px;
 }
 
 .filter-nav-bar-right-menu{
@@ -344,6 +343,7 @@ body{
     display: flex;
     justify-content: center;
     padding: 0px 20px;
+    padding-top: 20px;
 }
 
 .total-price-card{
@@ -381,12 +381,6 @@ body{
     width: 32px;
     height: 32px;
     border-radius: 30px;
-}
-
-.content{
-    width: 100px;
-    background-color: red;
-    height: 1024px;
 }
 
 .hotel-content{
