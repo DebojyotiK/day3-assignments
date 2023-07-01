@@ -9,12 +9,27 @@ body{
 }
 
 .nav-bar{
-    position: static;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 64px;
     border-bottom: 1px solid #ebebeb;
+    background-color: white;
+    z-index: 999;
+}
+
+.control-card-container{
+    display: flex;
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    right: 0px;
+    justify-content: center;
+    align-items: start;
 }
 
 .control-card{
@@ -134,6 +149,7 @@ body{
     right: 0px;
     display: flex;
     flex-direction: column;
+    z-index: 999;
 }
 
 .bottom-nav-bar{
@@ -142,6 +158,7 @@ body{
     align-items: center;
     padding: 12px 64px;
     border-top: 1px solid #ebebeb;
+    background-color: white;
 }
 
 .bottom-nav-bar-left{
@@ -208,12 +225,14 @@ body{
 }
 
 .filters-nav-bar-top-padding{
-    height: 20px;
+    height: 100px;
     background-color: white;
 }
 
 .filters-nav-bar{
+    position: -webkit-sticky;
     position: sticky;
+    top: 200px;
     height: 100px;
 }
 
@@ -292,4 +311,202 @@ body{
 }
 .item-inactive:hover > .bottom-dash-inactive{
     display: initial;
+}
+
+.total-price-section{
+    display: flex;
+    justify-content: center;
+    padding: 0px 20px;
+}
+
+.total-price-card{
+    border: 1px solid #e8e8e8;
+    border-radius: 12px;
+    padding: 14px 16px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.display-total-price-title{
+    font-weight: 500;
+    font-size: 16px;
+    margin: 0px;
+}
+
+.include-fees-title{
+    font-weight: 300;
+    font-size: 16px;
+    margin: 0px;
+    margin-right: 100px;
+}
+
+.toggle{
+    background-color: #b0b0b0;
+    width: 48px;
+    height: 32px;
+    border-radius: 24px;
+    padding: 2px 2px;
+}
+
+.toggle-cirle{
+    background-color: white;
+    width: 32px;
+    height: 32px;
+    border-radius: 30px;
+}
+
+.content{
+    width: 100px;
+    background-color: red;
+    height: 1024px;
+}
+
+.hotel-content{
+    padding: 24px 64px;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.list-content{
+    width: 25%;
+}
+
+.list-content-padding{
+    padding: 0px 12px;
+}
+
+.image-container{
+    display: block;
+    position: relative;
+}
+
+.list-image{
+    width: 100%;
+    aspect-ratio: 1.0522648084;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.list-item-location-text{
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0px;
+}
+
+.stay-with-text{
+    color: #717171;
+    font-weight: 300;
+    font-size: 15px;
+    margin: 0px;
+    margin-top: 2px;
+}
+
+.duration-text{
+    color: #717171;
+    font-weight: 300;
+    font-size: 15px;
+    margin: 0px;
+}
+
+.price-text{
+    font-weight: 300;
+    font-size: 15px;
+    margin: 0px;
+    margin-top: 10px;
+}
+
+.price-text b{
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.place-rating-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.rating-container{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 4px;
+}
+
+.rating-container h3{
+    font-weight: 300;
+    font-size: 15px;
+    margin: 0px;
+}
+
+.rating-overlay{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.book{
+    position: absolute;
+    width: 64px;
+    left: 16px;
+    bottom: 16px;
+}
+
+.carousal-container{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    bottom: 16px;
+    left: 0px;
+    right: 0px;
+}
+
+.carousal{
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    align-items: center;
+}
+
+.dot1{
+    width:7px;
+    height: 7px;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.dot2{
+    width:6.8px;
+    aspect-ratio: 1;
+    border-radius: 8px;
+    background-color: white;
+    opacity: 0.8;
+}
+
+.dot3{
+    width:6.6px;
+    aspect-ratio: 1;
+    border-radius: 8px;
+    background-color: white;
+    opacity: 0.6;
+}
+
+.dot4{
+    width:6.4px;
+    aspect-ratio: 1;
+    border-radius: 8px;
+    background-color: white;
+    opacity: 0.5;
+}
+
+.dot5{
+    width:6px;
+    aspect-ratio: 1;
+    border-radius: 8px;
+    background-color: white;
+    opacity: 0.4;
 }
